@@ -1,0 +1,34 @@
+{
+  "name": "omneky-ui-automation",
+  "version": "1.0.0",
+  "description": "A @playwright/test based test automation framework for UI test automation for Omneky.",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rm -rf screenshots/",
+    "test": "npx playwright test --grep-invert @AB",
+    "login": "npx playwright test tests/omneky/login.spec.ts",
+    "logout": "npx playwright test tests/omneky/logout.spec.ts",
+    "ab:baseline": "npx playwright test tests/omneky/ab.spec.ts --update-snapshots",
+    "ab:compare": "npx playwright test tests/omneky/ab.spec.ts",
+    "report": "npx playwright show-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@playwright/test": "^1.29.1"
+  },
+  "devDependencies": {
+    "@types/node": "^18.7.23",
+    "@typescript-eslint/eslint-plugin": "^5.38.1",
+    "@typescript-eslint/parser": "^5.38.1",
+    "eslint": "^8.24.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-promise": "^6.0.1",
+    "prettier": "^2.7.1",
+    "ts-node": "^10.9.1"
+  }
+}

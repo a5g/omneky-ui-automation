@@ -1,0 +1,29 @@
+npx playwright test --grep P0 --list
+
+npx playwright test --grep P0
+npx playwright test --grep P1
+npx playwright test --grep P0,P1
+
+npx playwright-cli open wikipedia.org
+npx playwright codegen wikipedia.org
+
+
+
+npx playwright test tests/omneky/ab.spec.ts --update-snapshots
+
+
+// parallel run
+npx playwright test --grep P0 --grep P1 --grep-invert @FAIL
+
+
+https://reactjs-staging.omneky.com/login
+adcreators@omneky.com
+omneky11ad!creators%$#  
+
+
+
+// commands to post in github
+npx playwright test --grep-invert @AB
+
+
+![typescript](https://github.com/a5g/jest-api-test-boilerplate/blob/master/assets/typescript.jpg)
