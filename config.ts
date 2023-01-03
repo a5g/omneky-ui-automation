@@ -1,5 +1,5 @@
 export default {
-  env: process.env.ENVIRONMENT || 'dev',
+  env: process.env.ENVIRONMENT || 'stage',
 
   dev: {
     baseURL: 'https://reactjs-dev.omneky.com',
